@@ -18,22 +18,63 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: Lilly
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://lncslncs.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-remote_theme: erlzhang/jekyll-theme-persephone
+#remote_theme: erlzhang/jekyll-theme-persephone
+theme: jekyll-theme-persephone
 plugins:
-  - jekyll-feed
   - jekyll-books
+  - jekyll-feed
+
+
+# Theme Settings
+logo: /img/logo.png
+rss: "/feed.xml"
+theme: 'jekyll-theme-persephone'
+theme_setting:
+  blog_page: "blog/index.md"
+  about_page: "about.md"
+  archive_page: "archive.md"
+  nav_pages:
+    - "about.md"
+    - "archive.md"
+  lang:
+    category_all: "全部"
+    blog_title: "博客"
+    comment:
+      user: "昵称"
+      email: "邮箱"
+      url: "链接"
+      message: "说点什么吧..."
+      reply: "回复"
+comment:
+  enabled: true
+  provider: "static"
+  static:
+    postUrl: "https://jekyll-comment-server.herokuapp.com/post-comment"
+    # postUrl: "https://g4vdkkahpjie.leanapp.cn/post-comment"
+smiley:
+  enabled: true
+head_code: |
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?3176e6e675ed7773f831e38c7a57880f";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 # Exclude from processing.
 # The following items will not be processed, by default.
