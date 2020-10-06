@@ -3,3 +3,8 @@
 .jekyll-cache
 .jekyll-metadata
 vendor
+Gemfile
+Gemfile.lock
+Makefile
+LICENSE
+README.md
