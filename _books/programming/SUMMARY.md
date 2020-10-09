@@ -6,4 +6,3 @@
 * [Website](website.md)
 * [Processing](processing.md)
 * [Stereo Vision](stereo.md)
-* [Movement to Music](kinect.md)
